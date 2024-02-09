@@ -26,18 +26,27 @@ public class SpellChecker {
 		int len2 = word2.length();
 		if (len1 == 0) {
 			return len2;
+		// redundant else
 		} else {
 		if (len2 == 0) {
 			return len1;
+		// redundant else
 		} else {
 		if (word1.charAt(0) == word2.charAt(0)) {
 			return levenshtein(tail(word1), tail(word2));
+		// redundant else
 		} else {
 			int min1 = levenshtein(tail(word1), word2);
 			int min2 = levenshtein(word1, tail(word2));
 			int min3 = levenshtein(tail(word1), tail(word2));
 			return 1 + Math.min(min1, Math.min(min2, min3));
 		}}}
+
+	/* redundant else means that when you do return, the function stops,
+ 	so the only way to continue the function run is if the condition was false wich is what else stands for.
+  	so there is no need for the else.	
+   	*/
+		
 	}
 
 	public static String[] readDictionary(String fileName) {
