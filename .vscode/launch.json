@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SpellChecker",
+            "request": "launch",
+            "mainClass": "SpellChecker",
+            "projectName": "hw07-yuval-benzvi_93383048"
+        },
+        {
+            "type": "java",
+            "name": "HashTagTokenizer",
+            "request": "launch",
+            "mainClass": "HashTagTokenizer",
+            "projectName": "hw07-yuval-benzvi_93383048"
+        },
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "args": "two  "
+        }
+    ]
+}
